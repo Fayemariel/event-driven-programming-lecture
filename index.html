@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Chowkanda Forever</title>
 
-    <!-- Website CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Leaflet Map CSS -->
     <link
         rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
 </head>
 
 <body>
@@ -28,6 +27,7 @@
             <a href="#menu">Menu</a>
             <a href="#memes">Memes</a>
             <a href="#location">Map</a>
+            <a href="#payment">Pay Online</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -39,7 +39,8 @@
 
         <img
             src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80"
-            alt="Chinese food">
+            alt="Chinese food"
+        >
     </section>
 
     <!-- About Us Section -->
@@ -79,7 +80,8 @@
             <div class="menu-card">
                 <img
                     src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=500&q=80"
-                    alt="Fried rice">
+                    alt="Fried rice"
+                >
 
                 <h3>Chao Fan</h3>
                 <p class="price">₱99.00</p>
@@ -88,13 +90,21 @@
                 <div class="meme-text">
                     😂 "I may be broke, but at least my rice is fried."
                 </div>
+
+                <button
+                    class="buy-button"
+                    onclick="buyNow('Chao Fan', 99)"
+                >
+                    Buy Now
+                </button>
             </div>
 
             <!-- Siomai -->
             <div class="menu-card">
                 <img
                     src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=500&q=80"
-                    alt="Dumplings">
+                    alt="Dumplings"
+                >
 
                 <h3>Siomai</h3>
                 <p class="price">₱49.00</p>
@@ -103,13 +113,21 @@
                 <div class="meme-text">
                     😂 "Kung ang gugma sakit, ang siomai kay worth it ra gihapon."
                 </div>
+
+                <button
+                    class="buy-button"
+                    onclick="buyNow('Siomai', 49)"
+                >
+                    Buy Now
+                </button>
             </div>
 
             <!-- Fried Chicken -->
             <div class="menu-card">
                 <img
                     src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=500&q=80"
-                    alt="Fried chicken">
+                    alt="Fried chicken"
+                >
 
                 <h3>Fried Chicken</h3>
                 <p class="price">₱89.00</p>
@@ -118,13 +136,21 @@
                 <div class="meme-text">
                     😂 "Pwede ra ko nimo ilisan, basta ayaw lang hilabti akong panit sa manok." 💀
                 </div>
+
+                <button
+                    class="buy-button"
+                    onclick="buyNow('Fried Chicken', 89)"
+                >
+                    Buy Now
+                </button>
             </div>
 
             <!-- Lauriat -->
             <div class="menu-card">
                 <img
                     src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80"
-                    alt="Complete meal">
+                    alt="Complete meal"
+                >
 
                 <h3>Lauriat</h3>
                 <p class="price">₱159.00</p>
@@ -133,6 +159,13 @@
                 <div class="meme-text">
                     😂 "Hindi ko kailangan ng mixed signals. Gusto ko lang ng mixed ulam sa Lauriat." 💀
                 </div>
+
+                <button
+                    class="buy-button"
+                    onclick="buyNow('Lauriat', 159)"
+                >
+                    Buy Now
+                </button>
             </div>
 
         </div>
@@ -142,53 +175,64 @@
         </p>
     </section>
 
-    
-<!-- Funny Memes Section -->
-<section id="memes">
-    <h2>😂 Chowkanda Forever, Kain Na!</h2>
-    <p>When the cravings hit, there's no going back!</p>
+    <!-- Funny Memes Section -->
+    <section id="memes">
+        <h2>😂 Chowkanda Forever, Kain Na!</h2>
+        <p>When the cravings hit, there's no going back!</p>
 
-    <div class="meme-container">
+        <div class="meme-container">
 
-        <div class="meme">
-            <img src="https://i.imgflip.com/1bij.jpg" alt="Funny hungry meme">
-            <h3>Me when I'm hungry</h3>
-            <p>"I need food. NOW."</p>
+            <div class="meme">
+                <img
+                    src="https://i.imgflip.com/1bij.jpg"
+                    alt="Funny hungry meme"
+                >
+                <h3>Me when I'm hungry</h3>
+                <p>"I need food. NOW."</p>
+            </div>
+
+            <div class="meme">
+                <img
+                    src="https://i.imgflip.com/2fm6x.jpg"
+                    alt="Funny reaction meme"
+                >
+                <h3>When the food arrives</h3>
+                <p>"Nobody talk to me. I'm eating."</p>
+            </div>
+
+            <div class="meme">
+                <img
+                    src="https://i.imgflip.com/26am.jpg"
+                    alt="Funny reaction meme"
+                >
+                <h3>Me after one bite</h3>
+                <p>"Okay, this is actually life-changing."</p>
+            </div>
+
+            <div class="meme">
+                <img src="summarize.jpg" alt="Siomai and fried rice">
+                <h3>When life gets complicated</h3>
+                <p>
+                    "Nagpa-summarize sa kinabuhi, pero ang gutom ra diay ang problema."
+                </p>
+            </div>
+
+            <div class="meme">
+                <img src="mekus.jpg" alt="Chowking Halo-Halo">
+                <h3>Me after payday</h3>
+                <p>"Mekus mekus sa halo-halo, mekus mekus pud sa budget."</p>
+            </div>
+
+            <div class="meme">
+                <img src="images.jpg" alt="Funny eating moment">
+                <h3>When the food is too good</h3>
+                <p>
+                    "Giingnan kog hinay-hinay ug kaon, pero gihunahuna na nako ang sunod nga subo."
+                </p>
+            </div>
+
         </div>
-
-        <div class="meme">
-            <img src="https://i.imgflip.com/2fm6x.jpg" alt="Funny reaction meme">
-            <h3>When the food arrives</h3>
-            <p>"Nobody talk to me. I'm eating."</p>
-        </div>
-
-        <div class="meme">
-            <img src="https://i.imgflip.com/26am.jpg" alt="Funny reaction meme">
-            <h3>Me after one bite</h3>
-            <p>"Okay, this is actually life-changing."</p>
-        </div>
-
-        <div class="meme">
-            <img src="summarize.jpg" alt="Siomai and fried rice">
-            <h3>When life gets complicated</h3>
-            <p>"Nagpa-summarize sa kinabuhi, pero ang gutom ra diay ang problema."</p>
-        </div>
-
-        <div class="meme">
-            <img src="mekus.jpg" alt="Chowking Halo-Halo">
-            <h3>Me after payday</h3>
-            <p>"Mekus mekus sa halo-halo, mekus mekus pud sa budget."</p>
-        </div>
-
-        <div class="meme">
-            <img src="images.jpg" alt="Funny eating moment">
-            <h3>When the food is too good</h3>
-            <p>"Giingnan kog hinay-hinay ug kaon, pero gihunahuna na nako ang sunod nga subo."</p>
-        </div>
-
-    </div>
-</section>
-
+    </section>
 
     <!-- Satellite Map Section -->
     <section id="location">
@@ -200,6 +244,103 @@
         <p class="map-note">
             Explore the satellite view and find our map pin!
         </p>
+    </section>
+
+    <!-- Pay Online Section -->
+    <section id="payment">
+        <h2>💳 Pay Online</h2>
+        <p>Enjoy your favorite meals with easy online payment!</p>
+
+        <div class="payment-container">
+
+            <div class="payment-card">
+                <h3>GCash</h3>
+                <p>Pay using your GCash wallet.</p>
+            </div>
+
+            <div class="payment-card">
+                <h3>Maya</h3>
+                <p>Pay using your Maya wallet.</p>
+            </div>
+
+            <div class="payment-card">
+                <h3>Credit or Debit Card</h3>
+                <p>Pay using a supported bank card.</p>
+            </div>
+
+        </div>
+
+        <a href="#menu" class="buy-button">Choose Your Meal</a>
+
+        <p class="payment-note">
+            Secure payment options will appear at checkout
+            when supported by our payment provider.
+        </p>
+
+        
+<div class="about-container">
+
+    <!-- First Creator -->
+    <div class="about-card">
+        <img src="jadde.jpg" alt="Neziel Jade Soco">
+
+        <h3>Neziel Jade Soco</h3>
+        <p>Co-Creator of Chowkanda Forever</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/YOUR_USERNAME"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="facebook">
+                Facebook
+            </a>
+
+            <a href="mailto:YOUR_EMAIL@gmail.com"
+               class="gmail">
+                Gmail
+            </a>
+
+            <a href="https://www.instagram.com/YOUR_USERNAME/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="instagram">
+                Instagram
+            </a>
+        </div>
+    </div>
+
+    <!-- Second Creator -->
+    <div class="about-card">
+        <img src="fayee.jpg" alt="Faye Mariel Dela Sierra">
+
+        <h3>Faye Mariel Dela Sierra</h3>
+        <p>Co-Creator of Chowkanda Forever</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/YOUR_USERNAME"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="facebook">
+                Facebook
+            </a>
+
+            <a href="mailto:YOUR_EMAIL@gmail.com"
+               class="gmail">
+                Gmail
+            </a>
+
+            <a href="https://www.instagram.com/YOUR_USERNAME/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="instagram">
+                Instagram
+            </a>
+        </div>
+    </div>
+
+</div>
+</section>
+
     </section>
 
     <!-- Contact Section -->
@@ -219,7 +360,6 @@
     <!-- Leaflet Map JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-    <!-- Map and Giphy Marker JavaScript -->
     <script>
         // Create the satellite map
         const map = L.map('satellite-map').setView(
@@ -249,7 +389,8 @@
                 <div class="gif-pin">
                     <img
                         src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
-                        alt="Funny animated GIF">
+                        alt="Funny animated GIF"
+                    >
 
                     <div class="pin-label">
                         Chowkanda Forever 🍜
@@ -261,10 +402,58 @@
             iconAnchor: [65, 50]
         });
 
-        // Add the GIF pin to the satellite map
+        // Add the GIF pin to the map
         L.marker([8.365, 124.865], {
             icon: gifIcon
         }).addTo(map);
+
+
+        // Buy Now function
+        async function buyNow(foodName, price) {
+            try {
+                const response = await fetch('/api/checkout', {
+                    method: 'POST',
+
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+
+                    body: JSON.stringify({
+                        items: [
+                            {
+                                name: foodName,
+                                quantity: 1
+                            }
+                        ]
+                    })
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        result.error || 'Checkout failed.'
+                    );
+                }
+
+                if (!result.checkoutUrl) {
+                    throw new Error(
+                        'Checkout link was not returned.'
+                    );
+                }
+
+                // Redirect to the payment provider's checkout page
+                window.location.href = result.checkoutUrl;
+
+            } catch (error) {
+                alert(
+                    'Unable to open online checkout. ' +
+                    'Please make sure the payment server is running.'
+                );
+
+                console.error('Checkout error:', error);
+            }
+        }
     </script>
 
 </body>
