@@ -478,5 +478,49 @@
         }
     </script>
 
+    <!-- Thank You Popup -->
+<div id="thankYouPopup" class="thankyou-overlay">
+    <div class="thankyou-box">
+        <button class="close-popup"
+                onclick="closeThankYouPopup()">
+            &times;
+        </button>
+
+        <img
+            src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80"
+            alt="Delicious food"
+            class="thankyou-image"
+        >
+
+        <h2>🎉 Thank You for Visiting!</h2>
+
+        <p>
+            Thank you for visiting
+            <strong>Chowkanda Forever!</strong>
+        </p>
+
+        <p>Good food, good mood! 🍜❤️</p>
+
+        <button class="thankyou-button"
+                onclick="closeThankYouPopup()">
+            Let's Eat! 😋
+        </button>
+    </div>
+</div>
+
+    <script>
+        // Show the thank you popup after 3 seconds
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('thankYouPopup').style.display = 'flex';
+            }, 3000);
+        });
+
+        // Close the thank you popup
+        function closeThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>

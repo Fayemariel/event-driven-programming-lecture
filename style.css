@@ -467,5 +467,94 @@ footer p {
         #4f5bd5
     );
 }
+/* Thank You Popup Background */
+.thankyou-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
+/* Popup Box */
+.thankyou-box {
+    position: relative;
+    background: linear-gradient(135deg, #fff0f5, #fff8dc);
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: popupAppear 0.5s ease;
+}
+
+/* Popup Image */
+.thankyou-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* Popup Heading */
+.thankyou-box h2 {
+    color: #d63384;
+    font-size: 26px;
+    margin: 20px 0 10px;
+}
+
+/* Popup Text */
+.thankyou-box p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Let's Eat Button */
+.thankyou-button {
+    background: linear-gradient(135deg, #ff69b4, #9b5de5);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.thankyou-button:hover {
+    transform: scale(1.05);
+}
+
+/* Popup Animation */
+@keyframes popupAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
